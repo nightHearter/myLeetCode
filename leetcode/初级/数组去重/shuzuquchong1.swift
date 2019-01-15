@@ -6,17 +6,23 @@
 //  Copyright © 2019年 张一奇. All rights reserved.
 //
 
-import UIKit
+/**
+ 给定一个排序数组，你需要在原地删除重复出现的元素，使得每个元素只出现一次，返回移除后数组的新长度。
+ 
+ 不要使用额外的数组空间，你必须在原地修改输入数组并在使用 O(1) 额外空间的条件下完成。
+ */
+// 注意，数组有序哦。例如 [0,0,1,1,1,2,2,3,3,4]
+// 你不需要考虑数组中超出新长度后面的元素。
 
 class shuzuquchong1 {
     
     func excute() {
         
-        var nums = [0,0,1,1,1,2,2,3,3,4]
+        var nums: [Int] = [0,0,1,1,1,2,2,3,3,4]
         
-        _ = removeDuplicates(&nums)
+        let count = removeDuplicates(&nums)
         
-        print(nums, nums.count)
+        print(nums, count)
         
     }
     
